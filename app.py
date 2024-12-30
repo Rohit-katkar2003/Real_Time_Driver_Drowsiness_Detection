@@ -3,7 +3,6 @@ import numpy as np
 import time
 import pygame
 import streamlit as st
-from PIL import Image
 
 classes = ['Closed', 'Open']  # Class labels for eyes only
 
@@ -13,7 +12,7 @@ eye_cascade = cv.CascadeClassifier("haarcascade files/haarcascade_eye.xml")
 
 # Initialize alarm
 pygame.mixer.init()
-pygame.mixer.music.load("research/alarm.wav")
+pygame.mixer.music.load("alarm.wav")
 
 # Track eye closure duration
 closed_start_time = None
